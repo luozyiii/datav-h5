@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
-import { Loading } from '@/components';
+import { SalesBar } from '@/components';
 
 export default function (props) {
   return (
     <div style={{ height: '100vh' }}>
-      <Loading />
+      <SalesBar />
     </div>
   );
 }

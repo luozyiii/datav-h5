@@ -23,6 +23,7 @@
     "@ant-design/pro-layout": "^6.5.0",
     "@umijs/preset-react": "1.x",
     "echarts": "^5.1.1",
+    "postcss-px-to-viewport": "^1.1.1",
     "umi": "^3.4.22"
   },
   "devDependencies": {

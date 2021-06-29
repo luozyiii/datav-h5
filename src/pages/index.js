@@ -1,5 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Loading } from '@/components';
+import {
+  Loading,
+  TopHeader,
+  SalesBar,
+  SalesLine,
+  SalesPie,
+  SalesMap,
+  SalesSun,
+  SalesRadar,
+} from '@/components';
 
 import './index.less';
 
@@ -13,7 +22,18 @@ export default function IndexPage() {
   return (
     <div className="home">
       {!ready && <Loading>数据加载中...</Loading>}
-      {ready && <div>h5</div>}
+      {ready && (
+        <div className="home">
+          <div className="data-wrapper" />
+          <TopHeader />
+          <SalesBar />
+          <SalesLine />
+          <SalesPie />
+          <SalesMap />
+          <SalesSun />
+          <SalesRadar />
+        </div>
+      )}
     </div>
   );
 }
