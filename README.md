@@ -29,3 +29,15 @@ export default defineConfig({
 
 ### 使用h5 标准模板
 在pages目录新建 document.ejs 并编写
+
+### SalesMap 百度地图
+```javascript
+// pages/document.ejs 引入百度地图依赖
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=VjOuySLG4EZKrdw1l443Y5sUX815AwXe"></script>
+<script src="https://mapv.baidu.com/gl/examples/static/common.js"></script>
+<script type="text/javascript" src="https://mapv.baidu.com/build/mapv.js"></script>
+<script src="https://code.bdstatic.com/npm/mapvgl@1.0.0-beta.54/dist/mapvgl.min.js"></script>
+<script src="https://code.bdstatic.com/npm/mapvgl@1.0.0-beta.53/dist/mapvgl.threelayers.min.js"></script>
+
+// SalesMap init() 绘制飞线动画
+```
